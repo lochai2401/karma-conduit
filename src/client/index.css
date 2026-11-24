@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 6px rgba(255, 69, 0, 0.65));
+  }
+  50% {
+    filter: drop-shadow(0 0 13px rgba(250, 204, 21, 0.9));
+  }
+}
+
+.conduit-energized {
+  animation: pulse-glow 2.2s ease-in-out infinite;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
